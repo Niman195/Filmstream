@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Register - FilmStream</title>
+</head>
+<body>
+
+  <header>
+    <div class="conteiner">
+      <h1 class="logo">FilmStream</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="films.html">Films</a>
+        <a href="log-in.html">Log in</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="input_box">
+    <form id="registerForm">
+      <h2>Register</h2>
+
+      <div class="input_email">
+        <label for="email">
+          <i class="fa fa-envelope"></i> Email
+        </label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div class="input_password">
+        <label for="password">
+          <i class="fa fa-lock"></i> Password
+        </label>
+        <input type="password" name="password" id="password" required />
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,265 @@
+:root {
+    --red: #E50914;
+    --backgroundblack: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--backgroundblack);
+    font-family: "Open Sans", sans-serif;
+}
+
+.conteiner {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    padding: 30px 0;
+
+}
+
+header .conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .logo {
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--red);
+    font-size: 40px;
+}
+
+header nav a {
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.active {
+    color: #FFF;
+
+}
+
+h1 {
+    text-align: center;
+    color: #AAA;
+}
+
+.filmIntro {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end; 
+    padding-bottom: 20px; 
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 20px;
+    align-self: flex-start; 
+    margin-left: 40px;
+    margin-top: 25%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0,0,0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 4px;    
+    padding: 0.8em 2.2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.button i {
+    font-size: 1.5em;
+}
+
+.infoExplained {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    margin-top: 30px;  
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 8px;
+    max-width: 600px;
+    display: none;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    
+}
+
+/* films.html*/
+
+.slider_container {
+  position: relative;
+  margin: 0 40px;
+  overflow: hidden;
+}
+
+.films {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  overflow-y: hidden; 
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.films::-webkit-scrollbar {
+  display: none; 
+}
+
+
+.films a {
+  flex: 0 0 479px; 
+  display: block;
+  transition: transform 0.3s;
+}
+
+.films a:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.films img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 37%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+h2 {
+  color: #FFF;
+  top: 20px;
+  left: 40px;
+  z-index: 2;
+  font-size: 2em;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.sortByDate {
+  position: relative;
+  padding: 10px;
+  justify-content: left;
+  margin-left: 10px;
+}
+
+/*Log-in*/
+
+.input_box {
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  margin: 50px auto; 
+  padding: 20px; 
+  gap: 15px; 
+}
+.input_box label {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1em;
+}
+
+.input_box form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.input_box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+}
+.input_box button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: var(--red);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #b0060d;
+}
+
+.recover_password a,
+.register a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-size: 0.9em;
+}

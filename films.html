@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+  <title>My_video_streaming</title>
+</head>
+<body>
+  <header>
+    <div class="conteiner">
+
+      <h1 class="logo">FilmStream</h1>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="films.html" class="active">Films</a>
+        <a href="log-in.html">Log in</a>
+      </nav>
+
+    </div>
+
+  </header>
+
+      <h2>Adventure films</h2>
+    <div class="sortByDate">
+      <label for="orderAdventure">Sort by date</label>
+      <select id="orderAdventure" class="orderSelect" data-target="adventureSlider">
+        <option value="asc">From older to newer</option>
+        <option value="desc">From newer to older</option>
+      </select>
+    </div>
+
+    <div id="adventureSlider" class="slider_container">
+      <button class="arrow left prevBtn">&#10094;</button>
+      <div class="films">
+        <a href="" data-year="2001"><img src="lotr_fellowship1.jpg" alt="Lord of the rings: The fellowship of the ring"></a>
+        <a href="" data-year="2002"><img src="lotr_twotowers.jpg" alt="Lord of the rings: The two towers"></a>
+        <a href="" data-year="2003"><img src="lotr_return.jpg" alt="Lord of the rings: The return of the king"></a>
+        <a href="" data-year="2003"><img src="pirates1.jpg" alt="Pirates of the Caribbean: The curse of the black pearl"></a>
+        <a href="" data-year="2006"><img src="pirates2.jpg" alt="Pirates of the Caribean: Dead man's cheast"></a>
+      </div>
+      <button class="arrow right nextBtn">&#10095;</button>
+    </div>
+
+    <h2>Terror films</h2>
+    <div class="sortByDate">
+      <label for="orderTerror">Sort by date</label>
+      <select id="orderTerror" class="orderSelect" data-target="terrorSlider">
+        <option value="asc">From older to newer</option>
+        <option value="desc">From newer to older</option>
+      </select>
+    </div>
+
+    <div id="terrorSlider" class="slider_container">
+      <button class="arrow left prevBtn">&#10094;</button>
+      <div class="films">
+        <a href="" data-year="1999"><img src="sleepy_hollow.jpg" alt="Spleepy Hollow"></a>
+        <a href="" data-year="2001"><img src="from_hell.jpg" alt="From Hell"></a>
+        <a href="" data-year="2002"><img src="the_ring.jpg" alt="The Ring"></a>
+        <a href="" data-year="2001"><img src="the_others.jpg" alt="The others"></a>
+        <a href="" data-year="1978"><img src="hallowen1.jpg" alt="Halloween"></a>
+      </div>
+      <button class="arrow right nextBtn">&#10095;</button>
+    </div>
+
+  <script src="js/films_html.js"></script>
+</body>
+</html>
